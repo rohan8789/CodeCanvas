@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <div class="smallContainer">
+        <div class="tcount" id="swapCount"></div>
+        <div class="tcount" id="compCount"></div>
+    </div>
+        <div class="container">
+            <div id="arrayContainer">
+            <!-- catch array -->
+            <!-- <div id="array"></div> -->
+        </div>
+        <div id="change-container">
+            <div class="sliders">
+                <div class="slider-container">
+                    <label>Speed</label>
+                    <input type="range" id="speed-slider" class="slider" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <div id="algo-container">
+            <button id="pauseMe">Stop Array</button>
+            <button class="action" id="idx1">Selection Sort</button>
+            <button class="action" id="idx2">Insertion Sort</button>
+            <button class="action" id="idx3">Bubble Sort</button>
+            <button class="action" id="idx4">Merge Sort</button>
+            <button class="action" id="idx5">Quick Sort</button>
+            <button id="initialize">Initialize</button>
+        </div>
+    </div>
+    <script src="/pages/script.js"></script>
+    <script src="/pages/selection.js"></script>
+    <script src="/pages/insertion.js"></script>
+    <script src="/pages/bubble.js"></script>
+    <script src="/pages/merge.js"></script>
+    <script src="/pages/Quick.js"></script>
+</body>
+</html>
